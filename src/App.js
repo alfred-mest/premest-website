@@ -4,21 +4,20 @@ import Navbar from './components/Navbar'
 import ViewMoreDetails from './Views/ViewMoreDetails'
 import Candidates from "./components/Candidates"
 import Footer from './components/Footer'
-import {BrowserRouter as Router, Switch,Route} from "react-router-dom"
+import {BrowserRouter as Router, Switch,Route, Redirect} from "react-router-dom"
 function App() {
   return (
-  //   <div >
-  //     <Navbar/>
-  //    <Homepage />
-  //     <Footer/>
-  // </div>
+ 
   <Router>
   <Navbar/>
 
   <Switch>
-  <Route exact path='/candidates' component={Candidates}/>
-     <Route exact path='/' component={Homepage}/>
-     <Route exact path ='/:jobID' component={ViewMoreDetails} />
+      <Route exact path='/candidates' component={Candidates}/>  
+      <Route exact path='/jobs' component={Homepage}/>
+      <Route exact path ='/jobs/:jobID' component={ViewMoreDetails} />
+      <Route  path='/'>
+            <Redirect to='/jobs'/>
+      </Route>
   </Switch>
   <Footer/>
   </Router>

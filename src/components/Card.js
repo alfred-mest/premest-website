@@ -19,7 +19,7 @@ function Card({ card }) {
                         
                         </div>
                         <Link to={{
-                            pathname:`/${card.id}`,
+                            pathname:`/jobs/${card.id}`,
                             state:{card}
                         }}>
                             <button className='btn btn-outline-primary w-100' >Apply Now</button>
