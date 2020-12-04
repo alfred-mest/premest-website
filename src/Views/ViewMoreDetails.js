@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import List from "../data/jobcarddata.json";
-import Card from "../components/Card";
 import { Link } from 'react-router-dom'
 
 function SideCard({ card }) {
@@ -29,7 +28,6 @@ function SideCard({ card }) {
 
 function ViewMoreDetails(props) {
 
-
     const [card, setCard] = useState({})
 
     const getJobs = (limit = 3) => {
@@ -55,7 +53,7 @@ function ViewMoreDetails(props) {
                 <div className='container '>
 
                     <div className='row  '>
-                        <div className='col-sm-12 col-md-12 col-lg-3 mt-5 sticky-top'>
+                        <div className='col-sm-12 col-md-12 col-lg-3 mt-5 '>
                             <img src={card.imgSrc} className='card-img mb-3 w-100' height='150px' alt='' />
                             <h5>Examen International</h5>
                             <p>054790-21765</p>
@@ -96,7 +94,7 @@ function ViewMoreDetails(props) {
 
                     <h4>Other Jobs you might be interest in</h4>
                     <div className="d-flex ">
-                        {getJobs(5)}
+                        {getJobs(4)}
                     </div>
                 </div>
             </div>

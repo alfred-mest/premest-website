@@ -4,23 +4,24 @@ import Navbar from './components/Navbar'
 import ViewMoreDetails from './Views/ViewMoreDetails'
 import Candidates from "./components/Candidates"
 import Footer from './components/Footer'
-import {BrowserRouter as Router, Switch,Route, Redirect} from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom"
+// import FloatingBut from './components/FloatingBut'
 function App() {
   return (
- 
-  <Router>
-  <Navbar/>
 
-  <Switch>
-      <Route exact path='/candidates' component={Candidates}/>  
-      <Route exact path='/jobs' component={Homepage}/>
-      <Route exact path ='/jobs/:jobID' component={ViewMoreDetails} />
-      <Route  path='/'>
-            <Redirect to='/jobs'/>
-      </Route>
-  </Switch>
-  <Footer/>
-  </Router>
+    <Router>
+      <Navbar />
+      {/** <FloatingBut /> */}
+      <Switch>
+        <Route exact path='/candidates' component={Candidates} />
+        <Route exact path='/jobs' component={Homepage} />
+        <Route exact path='/jobs/:jobID' component={ViewMoreDetails} />
+        <Route path='/'>
+          <Redirect to='/jobs' />
+        </Route>
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 
