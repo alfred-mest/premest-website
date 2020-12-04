@@ -4,7 +4,6 @@ import Filter from "../components/Filter"
 import Lists from "../data/jobcarddata.json"
 import Card from '../components/Card'
 import { useHistory } from 'react-router-dom';
-import FloatingBut from '../components/FloatingBut'
 
 function Homepage({ match, card }) {
     const history = useHistory()
@@ -20,9 +19,9 @@ function Homepage({ match, card }) {
     //       if (`class`)
     //    }
 
-    useEffect(() => {
-        $('.col-sm').remove(".filter").append(".sidebar")
-    })
+    // useEffect(() => {
+    //     $('.col-sm').remove(".filter").append(".sidebar")
+    // })
     return (
         <div className='container-fluid bg-light ' /*style={{minHeight:"120vh"}}*/ >
             <div className='container '>
