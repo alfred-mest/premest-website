@@ -89,8 +89,8 @@ function Homepage({ match, card }) {
                             }
                         </div>
                    
-
-                     <button className='btn btn-info '>Load More</button>
+{/* 
+                     <button className='btn btn-info '>Load More</button> */}
 
                   
                   

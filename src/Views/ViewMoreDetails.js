@@ -56,10 +56,7 @@ function ViewMoreDetails(props) {
                         <div className='col-sm-12 col-md-12 col-lg-3 mt-5 '>
                             <img src={card.imgSrc} className='card-img mb-3 w-100' height='150px' alt='' />
                             <h5>Examen International</h5>
-                            <p>054790-21765</p>
-                            <p>054790-21765</p>
-                            <p>054790-21765</p>
-                            <p>054790-21765</p>
+                            
 
                         </div>
 
@@ -91,11 +88,11 @@ function ViewMoreDetails(props) {
 
                         </div>
                     </div>
-
-                    <h4>Other Jobs you might be interest in</h4>
-                    <div className="d-flex  d-block d-sm-3">
+{/* 
+                    <h4>Other Jobs you might be interest in</h4> */}
+                    {/* <div className="d-flex  d-block d-sm-3">
                         {getJobs(3)}
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

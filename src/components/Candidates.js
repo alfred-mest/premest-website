@@ -23,7 +23,7 @@ function Candidates() {
   </p>
             <div class="candidate-connect-links">
               <a href="http://facebook.com">
-                <i class="bx bxl-facebook"></i>
+                <i class="bx bxl-github"></i>
               </a>
               <a href="http://facebook.com">
                 <i class="bx bxl-twitter"></i>
@@ -53,7 +53,7 @@ function Candidates() {
 </p>
             <div class="candidate-connect-links">
               <a href="http://facebook.com">
-                <i class="bx bxl-facebook"></i>
+                <i class="bx bxl-github"></i>
               </a>
               <a href="http://facebook.com">
                 <i class="bx bxl-twitter"></i>
@@ -83,7 +83,7 @@ function Candidates() {
 </p>
             <div class="candidate-connect-links">
               <a href="http://facebook.com">
-                <i class="bx bxl-facebook"></i>
+                <i class="bx bxl-github"></i>
               </a>
               <a href="http://facebook.com">
                 <i class="bx bxl-twitter"></i>
@@ -113,7 +113,7 @@ function Candidates() {
 </p>
             <div class="candidate-connect-links">
               <a href="http://facebook.com">
-                <i class="bx bxl-facebook"></i>
+                <i class="bx bxl-github"></i>
               </a>
               <a href="http://facebook.com">
                 <i class="bx bxl-twitter"></i>
@@ -143,7 +143,7 @@ function Candidates() {
 </p>
             <div class="candidate-connect-links">
               <a href="http://facebook.com">
-                <i class="bx bxl-facebook"></i>
+                <i class="bx bxl-github"></i>
               </a>
               <a href="http://facebook.com">
                 <i class="bx bxl-twitter"></i>
@@ -173,7 +173,7 @@ function Candidates() {
 </p>
             <div class="candidate-connect-links">
               <a href="http://facebook.com">
-                <i class="bx bxl-facebook"></i>
+                <i class="bx bxl-github"></i>
               </a>
               <a href="http://facebook.com">
                 <i class="bx bxl-twitter"></i>
@@ -203,7 +203,7 @@ function Candidates() {
 </p>
             <div class="candidate-connect-links">
               <a href="http://facebook.com">
-                <i class="bx bxl-facebook"></i>
+                <i class="bx bxl-github"></i>
               </a>
               <a href="http://facebook.com">
                 <i class="bx bxl-twitter"></i>
