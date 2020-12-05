@@ -5,7 +5,7 @@ import "./ButStyles.css"
 function FloatingBut() {
 
     useEffect(() => {
-        $('.btn').click(function () {
+        $('.btnIconn').click(function () {
             $(this).toggleClass("click");
             $('.sidebar').toggleClass("show");
         });
@@ -27,7 +27,7 @@ function FloatingBut() {
     // const $ = require( "jquery" )( window );
     return (
         <div>
-            <div class="btn">
+            <div class="btnIconn">
                 <span><i class="far fa-stop-circle"></i></span>
             </div>
             <nav class="sidebar">

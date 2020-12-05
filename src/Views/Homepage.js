@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import $ from 'jquery'
+import {useMediaPredicate} from 'react-media-hook'
 import Filter from "../components/Filter"
 import Lists from "../data/jobcarddata.json"
 import Card from '../components/Card'
 import { useHistory } from 'react-router-dom';
+import "../styles/Filter.css"
+import FloatingBut from '../components/FloatingBut'
 
 function Homepage({ match, card }) {
     const history = useHistory()
@@ -13,7 +16,8 @@ function Homepage({ match, card }) {
 
     if (hasmatch && hasmatch.length)
         article = hasmatch[0]
-    // const [smallScreenDisplay, setSmallScreenDisplay] = useState(false)
+
+     const [smallScreenDisplay, setSmallScreenDisplay] = useState(false)
 
     //    const handleSmallScreen=()=>{
     //       if (`class`)
@@ -22,14 +26,30 @@ function Homepage({ match, card }) {
     // useEffect(() => {
     //     $('.col-sm').remove(".filter").append(".sidebar")
     // })
+
+    // const mediaStyle ={
+    //     display:none
+
+
+    // }
+
+    const biggerThan400 = useMediaPredicate("(min-width:400px)")
     return (
         <div className='container-fluid bg-light ' /*style={{minHeight:"120vh"}}*/ >
             <div className='container '>
 
                 <div className='row  '>
                     <div className='col-sm-12 col-md-12 col-lg-3 mt-5'>
-                        <div className="row filter">
-                            <Filter />
+                        <div>
+                           { biggerThan400?
+
+                                 <Filter />
+
+                                 :
+                                 <FloatingBut/>
+
+                           }
+                          
                         </div>
 
                     </div>

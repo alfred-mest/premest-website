@@ -6,27 +6,27 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-.btn{
+.btnIconn{
   position: absolute;
   top: 15px;
   left: 45px;
   height: 45px;
   width: 45px;
   text-align: center;
-  background: #1b1b1b;
+  background: #050202;
   border-radius: 3px;
   cursor: pointer;
   transition: left 0.4s ease;
 }
-.btn.click{
+.btnIconn.click{
   left: 260px;
 }
-.btn span{
+.btnIconn span{
   color: white;
   font-size: 28px;
   line-height: 45px;
 }
-.btn.click span:before{
+.btnIconn.click span:before{
   content: '\f00d';
 }
 .sidebar{
