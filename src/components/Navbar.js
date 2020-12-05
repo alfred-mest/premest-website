@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import logo from '../images/mestlogo_teal.png'
+import logo from '../images/mestlogo_white.png'
 import { Link, useLocation } from "react-router-dom"
 
 const Navbar = () => {
@@ -11,11 +11,15 @@ const Navbar = () => {
 
   }
 
+  let mycolr ={
+    background:"#28bbbb"
+  }
+
   const location = useLocation();
 
   return (
 
-    <nav className='navbar navbar-expand-lg navbar-light bg-white sticky-top'>
+    <nav className='navbar navbar-expand-lg navbar-light  sticky-top' style={mycolr}>
 
       <div className='container'>
         <Link to="" className="navbar-brand" >
@@ -36,7 +40,7 @@ const Navbar = () => {
 
 
             <li className="nav-item dropdown  ">
-              <h5 className={`nav-link active dropdown-toggle pt-3  `} role='button' data-toggle='dropdown'  >
+              <h5 className={`nav-link active dropdown-toggle pt-3 text-white  `} role='button' data-toggle='dropdown'  >
                 {(/^\/jobs\/*/.test(location.pathname)) ? "Jobs" : "Candidates"}
               </h5>
               <div className="dropdown-menu">
