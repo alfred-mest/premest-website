@@ -20,7 +20,7 @@ function App() {
           <Redirect to='/jobs' />
         </Route>
       </Switch>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }

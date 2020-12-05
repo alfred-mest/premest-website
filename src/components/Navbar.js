@@ -31,14 +31,14 @@ const Navbar = () => {
         </div>
 
 
-        <div className="collapse navbar-collapse ml-3  " id='navbarContent'>
-          <ul className="navbar-nav ">
+        <div className="collapse navbar-collapse   " id='navbarContent'>
+          <ul className="navbar-nav  ">
 
 
             <li className="nav-item dropdown  ">
-              <p className={`nav-link active dropdown-toggle`} role='button' data-toggle='dropdown'  >
+              <h5 className={`nav-link active dropdown-toggle pt-3  `} role='button' data-toggle='dropdown'  >
                 {(/^\/jobs\/*/.test(location.pathname)) ? "Jobs" : "Candidates"}
-              </p>
+              </h5>
               <div className="dropdown-menu">
                 <Link to={!(/^\/jobs\/*/.test(location.pathname)) ? '/jobs' : `/candidates`} className={`dropdown-item`}>
                   {!(/^\/jobs\/*/.test(location.pathname)) ? "Jobs" : "Candidates"}

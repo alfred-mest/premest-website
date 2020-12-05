@@ -26,7 +26,7 @@ function Homepage({ match, card }) {
             <div className='container '>
               
                 
-                  <div className=' d-none d-md-block  col-lg-12 pt-5'>
+                  <div className=' d-none d-md-block  col-lg-12 pt-5 pr-5'>
                   <SearchBut/>
                 
                  </div>

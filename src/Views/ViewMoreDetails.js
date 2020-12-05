@@ -93,8 +93,8 @@ function ViewMoreDetails(props) {
                     </div>
 
                     <h4>Other Jobs you might be interest in</h4>
-                    <div className="d-flex ">
-                        {getJobs(4)}
+                    <div className="d-flex  d-block d-sm-3">
+                        {getJobs(3)}
                     </div>
                 </div>
             </div>
