@@ -22,7 +22,7 @@ function Card({ card }) {
                             pathname:`/jobs/${card.id}`,
                             state:{card}
                         }}>
-                            <button className='btn btn-outline-primary w-100' >Apply Now</button>
+                            <button className='btn btn-info w-100' >Apply Now</button>
                         </Link>
                     </div>
                 </div>

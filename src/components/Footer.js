@@ -11,11 +11,8 @@ function Footer() {
        }
        let iconLink ={
               display: "inlineBlock",
-              backgroundColor: "black",
-         
-            
-              margin: "2px",
               color: "white !important",
+              margin: "2px",
               textDecoration: "none !important",
               fontSize: "130%",
               borderRadius: "0.2rem"  

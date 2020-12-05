@@ -181,5 +181,42 @@
                 }
             ]
         }
+    },
+
+    {
+        "id": "6",
+        "jobType": "Frontend Developer",
+        "briefDetail": "We are looking for a skilled developer to manage our site... ",
+        "imgSrc": "data:image/png;base64,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",
+        "fullDetails": {
+            "jobSum": "We're on a mission to find a motivated, talented and experienced person who is passionate about creating video and motion graphic content, and new media overall, that captures, stimulates and energizes the learning or understanding of others.",
+            "minQualification": "Minimum Qualification: Degree",
+            "experienceLevel": "Experience Level: Graduate trainee",
+            "experienceLength": "Experience Length: 5 years",
+            "jobRequirements": "We are looking to bring on a motivated and passionate designer to help visualize marketing assets and scale our brand vision. Youll conceptualize and design a wide range of marketing collateral for a growing startup. While at Sourcepoint, youll be collaborating with industry professionals to sharpen your skills, develop an understanding of new tools and build your skills beyond visual design.",
+            "responsibilities": [
+                {
+                    "one": "Video post-production general tasks",
+                    "two": "Video post-production general tasks",
+                    "three": "Organizing and managing media for online applications",
+                    "four": "Basic assemble, SFX and VO editing, movie compressions and DVD creation with basic menus",
+                    "five": "Quality control check of all media assets"
+                }
+            ],
+            "Qualifications": [
+                {
+                    "one": "5+ years as a Visual/Graphic Designer",
+                    "two": "Passion for design & emerging technology",
+                    "three": "Experience with Adobe After Effects, Adobe After Effects Expressions Engine and Adobe Premiere"
+                }
+            ],
+            "softwareKnowledge": [
+                {
+                    "one": "Microsoft office applications, Word, Excel, Outlook",
+                    "two": "Adobe CS4",
+                    "three": "Photoshop"
+                }
+            ]
+        }
     }
 ]

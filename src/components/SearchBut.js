@@ -5,18 +5,21 @@ function SearchBut() {
 
     return (
         <div className='headerSearch'>
-                <form>
-                    <div  className='form-box'>
-                    <input type='text' className='search-field jobType' placeholder='Search Job... ' id='input'/>
+               <div className='container'>
+               <form className='form-box container'>
+                 
+                        <i className='fas fa-search'></i>
+                    <input type='text' className='search-field jobType' placeholder='Search Job... ' />
 
-                    <input type='text' className='search-field location' placeholder='Location ' />
+                    <input type='text' className='search-field location border-right-5-info' placeholder='Location ' />
                     <input type='text'className='search-field type' placeholder='Job Type ' />
                    
                    <button className='search-btn'>Find Job</button>
-                    </div>
+                
                   
                     
                 </form>
+               </div>
         </div>
     )
 }
