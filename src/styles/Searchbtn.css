@@ -1,0 +1,37 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-field{
+    height: 50px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.jobType{
+   width: 300px; 
+}
+
+.location{
+    width: 200px;
+}
+
+.type{
+    width: 200px;
+}
+
+.search-btn{
+    height: 50px;
+    width: 150px;
+    background-color: teal;
+    border: none;
+    color: white;
+}
+
+/* .form-box{
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+} */

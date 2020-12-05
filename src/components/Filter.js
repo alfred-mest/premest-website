@@ -57,27 +57,7 @@ function Filter() {
 
 
 
-            <div className="card w-100 mb-0">
-                <div className="card-header">
-                    <h6 className="card-title">Type Of Employment</h6>
-                </div>
-                <div className="card-body">
-                    <div>
-                        <input type='checkbox' className='mr-2 mb-2' />
-                        <a >Frontent Roles</a>
-                    </div>
-
-                    <div>
-                        <input type='checkbox' className='mr-2' />
-                        <a>Backend Roles</a>
-                    </div>
-
-                    <div>
-                        <input type='checkbox' className='mr-2' />
-                        <a>Others</a>
-                    </div>
-                </div>
-            </div>
+          
 
 
         </React.Fragment>

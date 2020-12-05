@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import $ from 'jquery'
 import {useMediaPredicate} from 'react-media-hook'
 import Filter from "../components/Filter"
 import Lists from "../data/jobcarddata.json"
 import Card from '../components/Card'
 import { useHistory } from 'react-router-dom';
 import "../styles/Filter.css"
-import FloatingBut from '../components/FloatingBut'
+import SearchBut from '../components/SearchBut'
+// import FloatingBut from '../components/FloatingBut'
 
 function Homepage({ match, card }) {
     const history = useHistory()
@@ -19,40 +19,36 @@ function Homepage({ match, card }) {
 
      const [smallScreenDisplay, setSmallScreenDisplay] = useState(false)
 
-    //    const handleSmallScreen=()=>{
-    //       if (`class`)
-    //    }
-
-    // useEffect(() => {
-    //     $('.col-sm').remove(".filter").append(".sidebar")
-    // })
-
-    // const mediaStyle ={
-    //     display:none
-
-
-    // }
-
-    const biggerThan400 = useMediaPredicate("(min-width:400px)")
+   
+    const biggerThan420 = useMediaPredicate("(max-width:576px)")
     return (
         <div className='container-fluid bg-light ' /*style={{minHeight:"120vh"}}*/ >
             <div className='container '>
-
+              
+                
+                  <div className=' d-none d-md-block  col-lg-12 pt-5'>
+                  <SearchBut/>
+                
+                 </div>
                 <div className='row  '>
                     <div className='col-sm-12 col-md-12 col-lg-3 mt-5'>
-                        <div>
-                           { biggerThan400?
+                     
+                           { biggerThan420? (
+                               <div>
+                                  <button onClick={() => setSmallScreenDisplay(!smallScreenDisplay)} className='toggler'>
+                                  <i class="far fa-stop-circle"></i>
+                                  </button>
 
-                                 <Filter />
+                                  <div className={smallScreenDisplay ? null : "hide"}>
+                                        <Filter/>
+                                </div>
+                              </div>
+                           ):(
+                               <Filter/>
+                           )
 
-                                 :
-                                 <FloatingBut/>
-
-                           }
-                          
-                        </div>
-
-                    </div>
+                       }
+                  </div>
 
                     <div className="m-auto"></div>
 
@@ -92,6 +88,8 @@ function Homepage({ match, card }) {
                                         ))
                             }
                         </div>
+                     <button className='btn btn-info'>Load More</button>
+                    
                     </div>
                 </div>
 
